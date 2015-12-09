@@ -109,5 +109,7 @@ class QueryExporterProvider implements
         if ($plugin instanceof ActivatablePluginInterface) {
             $plugin->register();
         }
+
+        $plugin->boot();
     }
 }
