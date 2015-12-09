@@ -1,0 +1,40 @@
+{
+    "name"           : "devaloka-query-exporter",
+    "version"        : "0.5.0",
+    "description"    : "Exports WP_Query's query variables to front-end as JSON",
+    "keywords"       : [
+        "wordpress",
+        "plugin",
+        "wp_query"
+    ],
+    "homepage"       : "https://github.com/devaloka/devaloka-query-exporter",
+    "bugs"           : {
+        "url": "https://github.com/devaloka/devaloka-query-exporter/isssues"
+    },
+    "license"        : "(MIT OR GPL-2.0 OR GPL-3.0)",
+    "author"         : {
+        "name" : "Whizark",
+        "email": "devaloka@whizark.com",
+        "url"  : "http://whizark.com"
+    },
+    "files"          : [
+        "./MIT-LICENSE.txt",
+        "./GPL-LICENSE.txt",
+        "./devaloka-query-exporter.php",
+        "./loader/*",
+        "./src/*"
+    ],
+    "main"           : "./devaloka-query-exporter.php",
+    "repository"     : {
+        "type": "git",
+        "url" : "https://github.com/devaloka/devaloka-query-exporter.git"
+    },
+    "scripts"        : {
+        "lint"       : "mdast -u mdast-lint README.md",
+        "lint-travis": "mdast -f -u mdast-lint README.md"
+    },
+    "devDependencies": {
+        "mdast"     : "~2.3.0",
+        "mdast-lint": "~1.1.1"
+    }
+}
