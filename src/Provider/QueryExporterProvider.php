@@ -10,7 +10,6 @@
 
 namespace Devaloka\Plugin\QueryExporter\Provider;
 
-use Devaloka\Plugin\ActivatablePluginInterface;
 use Pimple\Container;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Devaloka\Devaloka;
@@ -20,7 +19,8 @@ use Devaloka\Provider\EventListenerProviderInterface;
 use Devaloka\DependencyInjection\ContainerInterface;
 use Devaloka\DependencyInjection\ContainerAwareInterface;
 use Devaloka\Translation\TranslatorAwareInterface;
-use Devaloka\Translation\TranslatableInterface;
+use Devaloka\Plugin\TranslatablePluginInterface;
+use Devaloka\Plugin\ActivatablePluginInterface;
 use Devaloka\EventDispatcher\EventDispatcherAwareInterface;
 
 /**
@@ -60,11 +60,6 @@ class QueryExporterProvider implements
 
                 if ($plugin instanceof TranslatorAwareInterface) {
                     $plugin->setTranslator($container['translator']);
-                }
-
-                if ($plugin instanceof TranslatableInterface) {
-                    $plugin->loadTextDomain();
-                    $plugin->loadLocaleFile();
                 }
 
                 return $plugin;
@@ -108,6 +103,11 @@ class QueryExporterProvider implements
 
         if ($plugin instanceof ActivatablePluginInterface) {
             $plugin->register();
+        }
+
+        if ($plugin instanceof TranslatablePluginInterface) {
+            $plugin->loadTextDomain();
+            $plugin->loadLocaleFile();
         }
 
         $plugin->boot();
