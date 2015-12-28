@@ -59,5 +59,8 @@
             "phpcs.xml",
             ".travis.yml"
         ]
+    },
+    "extra"            : {
+        "installer-loader": "loader/50-devaloka-query-exporter-loader.php"
     }
 }
