@@ -2,7 +2,7 @@
 /*
 Plugin Name: Devaloka Query Exporter
 Description: Exports WP_Query's query variables to front-end as JSON
-Version: 0.1.0
+Version: 0.1.1
 Author: Whizark
 Author URI: http://whizark.com
 License: GPL-2.0+

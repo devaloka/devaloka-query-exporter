@@ -1,7 +1,7 @@
 {
     "name"             : "devaloka/devaloka-query-exporter",
     "description"      : "Exports WP_Query's query variables to front-end as JSON",
-    "version"          : "0.1.0",
+    "version"          : "0.1.1",
     "type"             : "wordpress-plugin",
     "keywords"         : [
         "wordpress",
