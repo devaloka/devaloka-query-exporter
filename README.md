@@ -1,4 +1,9 @@
-# Devaloka Query Exporter Plugin [![Build Status][travis-image]][travis-url] [![Packagist][packagist-image]][packagist-url]
+# Devaloka Query Exporter Plugin
+
+[![Latest Stable Version][stable-image]][stable-url]
+[![Latest Unstable Version][unstable-image]][unstable-url]
+[![License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url]
 
 A WordPress Plugin that exports WP_Query's query variables to front-end as JSON.
 
@@ -29,8 +34,14 @@ A WordPress Plugin that exports WP_Query's query variables to front-end as JSON.
 3.  Move `devaloka-query-exporter/loader/50-devaloka-query-exporter-loader.php`
     into `<ABSPATH>wp-content/mu-plugins/`.
 
+[stable-image]: https://poser.pugx.org/devaloka/devaloka-query-exporter/v/stable
+[stable-url]: https://packagist.org/packages/devaloka/devaloka-query-exporter
+
+[unstable-image]: https://poser.pugx.org/devaloka/devaloka-query-exporter/v/unstable
+[unstable-url]: https://packagist.org/packages/devaloka/devaloka-query-exporter
+
+[license-image]: https://poser.pugx.org/devaloka/devaloka-query-exporter/license
+[license-url]: https://packagist.org/packages/devaloka/devaloka-query-exporter
+
 [travis-image]: https://travis-ci.org/devaloka/devaloka-query-exporter.svg?branch=master
 [travis-url]: https://travis-ci.org/devaloka/devaloka-query-exporter
-
-[packagist-image]: https://img.shields.io/packagist/v/devaloka/devaloka-query-exporter.svg
-[packagist-url]: https://packagist.org/packages/devaloka/devaloka-query-exporter
